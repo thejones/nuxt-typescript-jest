@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card component has the expected html structure 1`] = `
+<div
+  class="ba b--black-20 mw5 ma2"
+>
+  <img
+    src="https://robots.johnlindquist.com/Alex_Jones"
+  />
+   
+  <div
+    class="flex flex-column items-center pa2 b--black-20"
+  >
+    <div
+      class="f4"
+    >
+      Alex Jones
+    </div>
+     
+    <button
+      class="w-100 bg-blue dim mv2 pv2 bn pointer"
+    >
+      Select
+    </button>
+  </div>
+</div>
+`;

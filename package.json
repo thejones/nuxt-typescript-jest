@@ -1,0 +1,50 @@
+{
+  "name": "nuxt-typescript-jest",
+  "version": "1.0.4",
+  "private": true,
+  "dependencies": {
+    "@types/jest": "^21.1.2",
+    "axios": "^0.16.2",
+    "gsap": "^1.20.2",
+    "nuxt": "v1.0.0-rc11",
+    "nuxt-class-component": "^1.0.1",
+    "tachyons": "^4.7.4",
+    "vue-class-component": "^5.0.2",
+    "vue-property-decorator": "^5.1.1",
+    "vuex-class": "^0.2.0"
+  },
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "tslint-config-prettier-check ./tslint.json",
+    "pretest": "npm run lint",
+    "test": "jest"
+  },
+  "jest": {
+    "moduleFileExtensions": ["js", "json", "vue", "ts", "tsx"],
+    "transform": {
+      "\\.(ts|tsx)$": "<rootDir>/node_modules/ts-jest/preprocessor.js",
+      ".*\\.(vue)$": "<rootDir>/node_modules/jest-vue"
+    },
+    "snapshotSerializers": ["<rootDir>/node_modules/jest-serializer-vue"],
+    "testRegex": "/__tests__/.*\\.(ts|tsx|js)$",
+    "mapCoverage": true
+  },
+  "devDependencies": {
+    "@types/node": "^8.0.14",
+    "jest": "^21.2.1",
+    "jest-serializer-vue": "^0.2.0",
+    "jest-vue": "^0.8.1",
+    "jest-vue-preprocessor": "^1.3.0",
+    "ts-jest": "^21.1.2",
+    "ts-loader": "^2.3.0",
+    "tslint": "^5.7.0",
+    "tslint-config-prettier": "^1.5.0",
+    "typescript": "^2.4.1",
+    "vue-server-renderer": "^2.5.2",
+    "vue-template-compiler": "^2.5.2",
+    "vue-test-utils": "^1.0.0-beta.2"
+  }
+}
