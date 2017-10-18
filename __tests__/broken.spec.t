@@ -4,10 +4,11 @@ import { shallow } from "vue-test-utils";
 import Card from "../components/Card";
 
 describe("Card component", () => {
-  let cmp;
+  let vm;
 
   beforeEach(() => {
-    cmp = shallow(Card, {
+    const Constructor = Vue.extend(Card);
+    vm = new Constructor({
       propsData: {
         person: {
           id: 2,
@@ -15,10 +16,10 @@ describe("Card component", () => {
           last_name: "Jones"
         }
       }
-    });
+    }).$mount();
   });
 
   it("has the expected html structure", () => {
-    expect(cmp.element).toMatchSnapshot();
+    expect(vm.$el).toMatchSnapshot();
   });
 });
